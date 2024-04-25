@@ -1,0 +1,18 @@
+CRITICAL - 2024-04-18 19:55:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::sql()
+in APPPATH/Models/AnalisisModel.php on line 45.
+ 1 APPPATH/Controllers/AnalisisController.php(16): App\Models\AnalisisModel->getByPrecio()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\AnalisisController->byPrecio()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalisisController))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/EjemploCI/public/index.php')
+CRITICAL - 2024-04-18 19:55:48 --> Invalid file: "precio_view.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('precio_view.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('precio_view', [], true)
+ 3 APPPATH/Controllers/AnalisisController.php(17): view('precio_view', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\AnalisisController->byPrecio()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalisisController))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/EjemploCI/public/index.php')
