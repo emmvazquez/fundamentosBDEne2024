@@ -38,4 +38,16 @@ class ProductosModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    public function getDetalle($IdProducto){
+        $db      = db_connect();
+        $builder = $db->table('PRProducto')
+                    ->select('*')
+                    ->where('IdProducto',$IdProducto);
+
+        $query = $builder->get();
+        return $query->getResult();
+        
+    }
 }

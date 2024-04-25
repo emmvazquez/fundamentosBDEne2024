@@ -18,7 +18,7 @@
             <a href="<?=base_url('/marcas/show')?>" class="pure-menu-link">Lista Marcas</a>
         </li>
         <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Finance</a>
+            <a href="<?=base_url('/productos/cards')?>" class="pure-menu-link">Tarjetas</a>
         </li>
     </ul>
 </div>
