@@ -12,6 +12,7 @@ class ProductoController extends BaseController
     public function show(){
         $ProductoM = model('ProductosModel');
         $data['productos'] = $ProductoM->findAll();
-        return view('listaProductos',$data);
+        return  view('header').
+        view('listaProductos',$data);
     }
 }
